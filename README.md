@@ -12,4 +12,6 @@ The author suggests any FP language should have good support for a few core fund
 * _functions as values_ - the ability to easily create, use, and share funcations as a unit of abstraction and composition with a system
 
 ## F# is part of .NET
-F# is a statically typed language. At runtime, F# is compiled into Intermediary Language (IL) and is hosted on the .NET CLR. The F# compiler is not the C# compiler Roslyn.
+F# is a statically typed language. At runtime, F# is compiled into Intermediary Language (IL) and is hosted on the .NET CLR.
+
+F# has the same language features across .NET implementations although the tool-chain differs.
