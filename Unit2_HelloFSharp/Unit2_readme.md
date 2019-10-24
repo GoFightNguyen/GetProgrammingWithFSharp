@@ -23,7 +23,7 @@ Takeaways:
 The compiler determines type using type inference, see Lesson 5.
 * no `new` keyword - F# views a constructor as a function, like any other "normal" function you might define.
 The `new` keyword is optional, and generally only used when constructing objects implementing `IDisposable`
-* no semicolons - optional because the compiler uses the newling to determine you've finished an expression
+* no semicolons - optional because the compiler uses the newline to determine you've finished an expression
 * no brackets for function args - F# defines function args in two ways, __tupled form__ and __curried form__.
 For now, just know that when calling or defining
   * functions that take a single arg do not need round brackets
@@ -46,7 +46,7 @@ let doStuffWithTwoNumbers(first, second) =
 Not sure where to put this, but here are some takeaways from this code:
 * no `return` keyword - F# assumes the _final expression_ of a scope is the result of that scope.
 * no accessibility modifier - `public` is the default for top-level values.
-With nested scopes(described later), you hide values effectively without restorting to accessibility
+With nested scopes(described in 4.2.1), you hide values effectively without resorting to accessibility
 * no static modifier - static is the default way of working in F#
 
 #### 4.2.1 Nested Scopes
