@@ -1,16 +1,8 @@
-This unit focuses on the core foundational elements of F# as a language.
-
-Goals:
-* understand the basic syntax structure and philosophy of F#
-* gain experience working with its rich type inference
-* gain experience with expressions and statements
-* understand the benefits of immutable data
-
-## Lesson 4. Saying a little, doing a lot
+# Lesson 4. Saying a little, doing a lot
 F# aims to give the developer a powerful, static type system with an extremely lightweight syntax.
 In F#, the overall emphasis is to enable you to solve _complex_ problems with _simple_ code.
 
-### 4.1 Binding values in F#
+## 4.1 Binding values in F#
 The `let` keyword binds values to symbols.
 The value could be a primitive type to an object to a function, basically anything.
 ```fsharp
@@ -29,11 +21,11 @@ For now, just know that when calling or defining
   * functions that take a single arg do not need round brackets
   * functions that take zero or multiple args need them, as well as commas to separate the args
 
-#### 4.1.1 `let` is not `var`
+### 4.1.1 `let` is not `var`
 In C#, `var` declares a variable that can be modified later.
 In F#, `let` binds an __immutable value__ to a symbol.
 
-### 4.2 Scoping Values
+## 4.2 Scoping Values
 Scoping allows us not only to show intent by explaining where and when a value is of use within a program, but also to protect us from bugs by reducing the possibilities for a value to be used within an application.
 ```fsharp
 open System
@@ -49,7 +41,7 @@ Not sure where to put this, but here are some takeaways from this code:
 With nested scopes(described in 4.2.1), you hide values effectively without resorting to accessibility
 * no static modifier - static is the default way of working in F#
 
-#### 4.2.1 Nested Scopes
+### 4.2.1 Nested Scopes
 Consider this code sample.
 year and age are public.
 But if we only care about estimatedAge, then year and age do not need to be public.
@@ -67,7 +59,7 @@ let estimatedAge =
     sprintf "You are about %d years old!" age
 ```
 
-#### 4.2.2 Nested functions
+### 4.2.2 Nested functions
 Recall, F# treats functions as values.
 Thus, we can create functions within other functions.
 
