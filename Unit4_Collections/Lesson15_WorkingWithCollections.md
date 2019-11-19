@@ -15,7 +15,7 @@ let customersByCountry = customerList |> List.groupBy (fun c -> c.Country)
 ```
 
 Favor F#'s collection libraries over the standard LINQ functions.
-They're designed specifically with F#'s type system in mind and usually lead to more succing and idiomatic solutions.
+They're designed specifically with F#'s type system in mind and usually lead to more succint and idiomatic solutions.
 F# also has a `query { }` construct allowing use of `IQueryable` queries.
 
 ### 15.1.3 Transformation pipelines
@@ -83,7 +83,7 @@ Since arrays are just standard BCL arrays, they're high-performance but mutable.
 But you can safely rely on the `Array` module functions to create new arrays on each operation.
 
 ### 15.2.3 Immutable lists
-F# lists are native to F#, these are different than the BCL `List<T>` aka `ResizeArray` in F#
+F# lists are native to F#, these are different than the BCL `List<T>` aka `ResizeArray` in F#.
 F# lists are immutable.
 After you create a list, you cannot add or remove items (and if the data inside the list is immutable, it's entirely fixed).
 ```fsharp
