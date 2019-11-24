@@ -9,11 +9,18 @@ type Info =
       AvgFileSize : double }
 
 let getStats (dir, files: array<FileInfo>) =
-    let size = files |> Array.sumBy (fun f -> f.Length)
+    let dirSize = files |> Array.sumBy (fun f -> f.Length)
     let numberOfFiles = files |> Array.length
-    let avgFileSize = double size / double numberOfFiles
+    let avgFileSize = double dirSize / double numberOfFiles
+
+    // another way
+    // let fileSizes = files |> Array.map (fun f -> f.Length)
+    // let dirSize = fileSizes |> Array.sum
+    // let numberOfFiles = files |> Array.length
+    // let avgFileSize = fileSizes |> Array.map double |> Array.average
+
     { DirName = dir
-      Size = size
+      Size = dirSize
       NumberOfFiles = numberOfFiles
       AvgFileSize = avgFileSize }
 

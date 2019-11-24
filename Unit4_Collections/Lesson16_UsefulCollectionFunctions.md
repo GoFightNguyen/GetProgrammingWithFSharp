@@ -22,7 +22,7 @@ Useful as an end function of a pipeline, such as saving records to a database - 
 
 ### 16.1.3 collect
 `collect` has many other names, including `SelectMany`, `FlatMap`, `Flatten`, and even `Bind`.
-It takes in a list of items, and a function returning a `new collection from each item in that collection_ - and then merges them all back into a _single_ list.
+It takes in a list of items, and a function returning a _new collection from each item in that collection_ - and then merges them all back into a _single_ list.
 
 ```fsharp
 type Order = { OrderId : int }
