@@ -4,7 +4,7 @@ Let's look at using functions and type inference to create lightweight code reus
 A __higher-order function__ is a function taking in another function as one of its arguments.
 
 | | OO | Functional |
-| *** | *** | *** |
+| --- | --- | --- |
 | Contract Specification | Interface (nominal) | Function (structural) |
 | Common patterns | Strategy/command | Higher-order function |
 | Verbosity | med/heavy | lightweight |
