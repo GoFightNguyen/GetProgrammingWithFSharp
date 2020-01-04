@@ -115,7 +115,7 @@ Benefits of __marker types__:
 
 Author's advice is to start simple:
 - use single-case DUs as wrapper cases to prevent simple errors such as mixing up values of the same type
-- take it further with markert types to represent states
+- take it further with market types to represent states
 - be careful, taking the use of marker types too far can make it difficult to wade through code
 
 ## 23.3 Results vs exceptions
