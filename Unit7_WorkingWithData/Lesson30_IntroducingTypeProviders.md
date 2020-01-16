@@ -59,3 +59,9 @@ A downside of erasing is it makes them difficult to work with in C#.
 _Generative_ type providers allow for runtime reflection, but are not common.
 
 ### 30.2.3 Inferring types and schemas
+When working with type providers, you must realize the type system is driven by an external data source.
+
+When it comes to schema inferernce, some type providers work differently from others.
+Examples:
+- `FSharp.Data` allows you to manually override the schema by supplying a custom argument to the type provider
+- Others, like for SQL, can use schema guidance from the source system
