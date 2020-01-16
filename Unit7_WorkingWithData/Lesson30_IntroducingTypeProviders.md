@@ -6,8 +6,8 @@ Type providers are a significant part of F# support for information-rich program
 At their most basic, type providers are just F# assemblies that can be plugged into the F# compiler, and then can be used at edit time to generate entire type systems for you to work with _as you type_.
 They can be used with _live_ data sources, and even other programming languages.
 
-Type providers can affect type systems without rebuilding the project, because they run int he background as you write code.
-The term information-rich programming refers to the concept of bring disparate data sources into the F# programming language in an extensible way.
+Type providers can affect type systems without rebuilding the project, because they run in the background as you write code.
+The term information-rich programming refers to the concept of bringing disparate data sources into the F# programming language in an extensible way.
 
 ## 30.2 Working with your first type provider
 Using soccer results from a CSV file, we will answer: which three teams won at home the most over the whole season.
